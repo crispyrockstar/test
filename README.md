@@ -8,8 +8,8 @@ initialize git in parentFolder-               git init
 to check the untracked folders and files -    git status
 to add remote repo address               -    git remote add origin https://github.com/crispyrockstar/test.git
 to check the remote repo address         -    git remote -v
-to add folders and files to staging area -    git add folder1/           {Here make sure you haven't initialised git inside folder1/folder2}
-verify again that it is added to stagingArea- git status
+to add folders and files to staging area -    git add folder1/           {Here make sure you haven't initialised git inside folder1/2
+verify again that it is added to stagingArea- git status                      if you did then delete that hidden .git from folder1/2}
 now commit                                 -  git commit -m "Added folder1 to repo"
 now push                                   -  git push origin <BRANCH_NAME>
 now check in repository folder1 must be get added.
