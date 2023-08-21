@@ -1,0 +1,111 @@
+/* GameBookingPage.css */
+
+.game-booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calendar-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 400px; /* Reduce the max-width to make the calendar smaller */
+  }
+  
+  .calendar-container .react-calendar {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .games-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+  }
+  
+  .game-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 8px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .game {
+    font-size: 14px;
+  }
+  
+  .game-box:hover {
+    background-color: #e1f5fe;
+  }
+  
+  .game-box.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .time-slots-container {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  .time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: calc(100vh - 400px); /* Adjust max-height to fit the time slots within the screen */
+    overflow-y: auto; /* Add scrollbar if needed */
+  }
+  
+  .time-slot-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 8px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .time-slot {
+    font-size: 14px;
+  }
+  
+  .time-slot-box:hover {
+    background-color: #e1f5fe;
+  }
+  
+  .time-slot-box.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  

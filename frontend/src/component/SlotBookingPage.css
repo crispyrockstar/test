@@ -1,0 +1,134 @@
+/* SlotBookingPage.css */
+
+.slot-booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calendar-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 400px; /* Reduce the max-width to make the calendar smaller */
+  }
+  
+  .calendar-container .react-calendar {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .time-slots-container {
+    flex: 2; /* Use flex: 2 to give more space to the time slots */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Add a small gap between time slots */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .Calendar .react-calendar__navigation button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .Calendar .react-calendar__navigation button:enabled:hover,
+  .Calendar .react-calendar__navigation button:enabled:focus {
+    background: #0056b3;
+  }
+  
+  .Calendar .react-calendar__navigation button[disabled] {
+    background: #eaeaea;
+    cursor: not-allowed;
+  }
+  
+  .Calendar .react-calendar__month-view__weekdays {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .Calendar .react-calendar__month-view__weekdays__weekday abbr {
+    text-decoration: none;
+  }
+  
+  .Calendar .react-calendar__tile {
+    max-width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .Calendar .react-calendar__tile--now {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .Calendar .react-calendar__tile--active,
+  .Calendar .react-calendar__tile--hasActive {
+    background-color: #e1f5fe;
+    color: #007bff;
+  }
+  
+  .time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: calc(100vh - 240px); /* Adjust max-height to fit the time slots within the screen */
+    overflow-y: auto; /* Add scrollbar if needed */
+  }
+  
+  .time-slot-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 8px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 150px; /* Adjust width to fit the content */
+    height: 50px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .time-slot {
+    font-size: 14px;
+  }
+  
+  .time-slot-box:hover {
+    background-color: #e1f5fe;
+  }
+  
+  .time-slot-box.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
